@@ -1,0 +1,6 @@
+    function json(){
+        $this->load->library('datatables');
+        $this->datatables->select('*');
+        $this->datatables->from('pengaduan');
+        return print_r($this->datatables->generate());
+    }
